@@ -1,0 +1,22 @@
+
+Category,Component,Specification,Quantity,Estimated Unit Price (MYR),Estimated Total (MYR),Purpose,Notes
+Controller,ESP32 DevKit V1,ESP32-WROOM-32 with Bluetooth,1,25,25,Main controller and Bluetooth communication,Use classic Bluetooth SPP with a compatible Android app
+Servo Driver,PCA9685 PWM Servo Driver,16-channel I2C,2,12,24,Controls all 18 servo signal channels,Set different I2C addresses for the two boards
+Actuators,MG996R Servo Motor,Metal gears 180 degree positional servo,18,22,396,Three joints per leg,Confirm genuine or suitable compatible units and dimensions
+Power,Battery Pack,2S 7.4V rechargeable pack with suitable discharge rating,1,80,80,Main portable power source,Select after calculating peak current and runtime
+Power,High-Current UBEC,Regulated 6V output with adequate continuous current rating,2,60,120,Provides servo power,Verify ratings and current sharing before connecting
+Power,Logic Buck Converter,Regulated 5V output,1,15,15,Powers ESP32 from battery,Choose a module rated for the input voltage
+Power,Main Power Switch,DC-rated switch suitable for expected current,1,8,8,Main power isolation,Must be rated for the actual load
+Power,Inline Fuse and Holder,DC-rated with correctly selected fuse,1,10,10,Protects power wiring,Size the fuse to wiring and load
+Power,Power Distribution Wiring,16 AWG silicone wire and suitable connectors,1,25,25,Distributes servo power,Use suitable current-rated connectors
+Electronics,Electrolytic Capacitor,1000uF 10V or higher,2,3,6,Helps buffer short supply transients,Install across suitable power rails observing polarity
+Electronics,Jumper Wires,Male-to-female and male-to-male assortment,1,10,10,Logic and signal connections,Keep high-current wiring separate
+Electronics,Perfboard or Terminal Board,Prototyping and power connections,1,10,10,Organizes wiring,Use secure power connections
+Mechanical,3D Printing Filament,PLA or PETG,1,45,45,Body and six sets of leg segments,Estimated material allowance
+Mechanical,M3 Screw and Nut Assortment,Mixed lengths,1,20,20,Assembly hardware,Finalize lengths after CAD
+Mechanical,M3 Heat-Set Inserts,Brass inserts,1,10,10,Reusable threaded mounting points,Optional where nuts or direct screws suffice
+Mechanical,Servo Horns and Mounting Hardware,Compatible with selected servos,1,15,15,Connects servos to leg joints,Check whether included with servo purchases
+Mechanical,Rubber Feet or Pads,Non-slip material,6,2,12,Improves foot grip,Optional
+Tools,USB Data Cable,Compatible with ESP32 board,1,8,8,Programming and debugging,Check connector type
+Tools,Battery Charger,Compatible balance charger for selected battery chemistry,1,50,50,Recharges battery safely,Must match the exact battery chemistry and cell count
+TOTAL,Estimated Project Total,,,"",889,,"Before shipping and contingency"
