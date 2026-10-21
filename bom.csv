@@ -1,22 +1,22 @@
 
-Category,Component,Specification,Quantity,Estimated Unit Price (MYR),Estimated Total (MYR),Purpose,Notes
-Controller,ESP32 DevKit V1,ESP32-WROOM-32 with Bluetooth,1,25,25,Main controller and Bluetooth communication,Use classic Bluetooth SPP with a compatible Android app
-Servo Driver,PCA9685 PWM Servo Driver,16-channel I2C,2,12,24,Controls all 18 servo signal channels,Set different I2C addresses for the two boards
-Actuators,MG996R Servo Motor,Metal gears 180 degree positional servo,18,22,396,Three joints per leg,Confirm genuine or suitable compatible units and dimensions
-Power,Battery Pack,2S 7.4V rechargeable pack with suitable discharge rating,1,80,80,Main portable power source,Select after calculating peak current and runtime
-Power,High-Current UBEC,Regulated 6V output with adequate continuous current rating,2,60,120,Provides servo power,Verify ratings and current sharing before connecting
-Power,Logic Buck Converter,Regulated 5V output,1,15,15,Powers ESP32 from battery,Choose a module rated for the input voltage
-Power,Main Power Switch,DC-rated switch suitable for expected current,1,8,8,Main power isolation,Must be rated for the actual load
-Power,Inline Fuse and Holder,DC-rated with correctly selected fuse,1,10,10,Protects power wiring,Size the fuse to wiring and load
-Power,Power Distribution Wiring,16 AWG silicone wire and suitable connectors,1,25,25,Distributes servo power,Use suitable current-rated connectors
-Electronics,Electrolytic Capacitor,1000uF 10V or higher,2,3,6,Helps buffer short supply transients,Install across suitable power rails observing polarity
-Electronics,Jumper Wires,Male-to-female and male-to-male assortment,1,10,10,Logic and signal connections,Keep high-current wiring separate
-Electronics,Perfboard or Terminal Board,Prototyping and power connections,1,10,10,Organizes wiring,Use secure power connections
-Mechanical,3D Printing Filament,PLA or PETG,1,45,45,Body and six sets of leg segments,Estimated material allowance
-Mechanical,M3 Screw and Nut Assortment,Mixed lengths,1,20,20,Assembly hardware,Finalize lengths after CAD
-Mechanical,M3 Heat-Set Inserts,Brass inserts,1,10,10,Reusable threaded mounting points,Optional where nuts or direct screws suffice
-Mechanical,Servo Horns and Mounting Hardware,Compatible with selected servos,1,15,15,Connects servos to leg joints,Check whether included with servo purchases
-Mechanical,Rubber Feet or Pads,Non-slip material,6,2,12,Improves foot grip,Optional
-Tools,USB Data Cable,Compatible with ESP32 board,1,8,8,Programming and debugging,Check connector type
-Tools,Battery Charger,Compatible balance charger for selected battery chemistry,1,50,50,Recharges battery safely,Must match the exact battery chemistry and cell count
-TOTAL,Estimated Project Total,,,"",889,,"Before shipping and contingency"
+Category,Component,Specification,Quantity,Unit Price (USD),Total Price (USD),Purpose,CAD or Selection Notes
+Controller,ESP32 DevKit V1,ESP32-WROOM-32 with Bluetooth,1,6.00,6.00,Main controller and Bluetooth connection,Use Bluetooth Classic for compatible Android control
+Servo,MG90S Metal Gear Servo,9g positional servo 180 degree,18,2.50,45.00,Three joints per leg,Use a matching STEP model and verify actual servo dimensions
+Servo Driver,PCA9685 16-Channel PWM Driver,I2C servo controller,2,3.00,6.00,Generates PWM signals for 18 servos,Configure distinct I2C addresses
+Battery,2S Rechargeable Battery,7.4V nominal with suitable discharge rating,1,18.00,18.00,Portable power source,Finalize capacity and current rating after load testing
+Power,6V High-Current UBEC,Regulated output for servo rail,2,12.00,24.00,Servo power supply,Select units with sufficient continuous and peak current capacity
+Power,5V Buck Converter,Regulated logic supply,1,4.00,4.00,Powers ESP32,Verify input range and output current
+Power,Main Power Switch,DC-rated switch,1,2.00,2.00,Power isolation,Match rating to circuit
+Power,Inline Fuse and Holder,DC-rated fuse assembly,1,2.50,2.50,Electrical protection,Select fuse for wiring and load
+Power,Silicone Wire and Connectors,Power distribution set,1,6.00,6.00,Connects battery and servo rail,Use suitable current-rated connectors
+Electronics,Electrolytic Capacitor,1000uF 10V or higher,2,0.75,1.50,Buffers short power transients,Observe polarity
+Electronics,Jumper Wires,Assorted jumper leads,1,2.50,2.50,Logic and signal wiring,Keep signal and high-current wiring organized
+Electronics,Terminal or Prototyping Board,Power distribution connections,1,3.00,3.00,Organizes electronics,Ensure secure connections
+Mechanical,3D Printing Filament,PLA or PETG material allowance,1,10.00,10.00,Printed chassis and leg components,Estimate only; depends on print volume and sponsor coverage
+Mechanical,M3 Screws and Nuts,Assorted lengths,1,4.00,4.00,Mechanical assembly,Finalize after CAD design
+Mechanical,M3 Heat-Set Inserts,Brass inserts,1,2.00,2.00,Threaded mounting points,Optional
+Mechanical,Servo Horns and Screws,Compatible MG90S hardware,1,3.00,3.00,Joint attachment,Check included accessories before buying
+Mechanical,Non-Slip Foot Pads,Rubber pads,6,0.40,2.40,Improves traction,Optional
+Tools,USB Data Cable,Compatible with ESP32 board,1,2.00,2.00,Programming and debugging,Check connector type
+Tools,Battery Charger,Compatible with selected battery chemistry,1,12.00,12.00,Safe battery charging,Must match battery chemistry and cell count
+TOTAL,Estimated Project Total,,,,"156.90",,Excludes shipping taxes and contingency
